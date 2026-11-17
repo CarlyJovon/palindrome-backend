@@ -1,22 +1,39 @@
-# ↔️ Week08 Bootcamp2019a Project: Server Side Palindrome Checker
+# Palindrome Checker
+A web app that checks whether a word is a palindrome (spelled the same forwards and backwards). The check runs on a Node.js server built with only Node's core modules, no Express.
 
-### Goal: Create a simple web application that uses the fs and http modules to validate if a string is a palindrome server side.
+Features
+- Enter a word and get an instant result
+- Case-insensitive check (Racecar counts as a palindrome)
+- Server returns JSON from a simple API endpoint
 
-### How to submit your code for review:
+## Tech Stack
+- HTML 
+- CSS
+- JavaScript
+- Node.js
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## How It Works
+- The browser sends the word to `GET /api?palindrome=<word>` 
+- The server lowercases it, reverses it, compares the two and responds:
 
-Example:
 ```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
+{ "palindrome": true
+}
 ```
+Run Locally
+Requires Node.js. No dependencies to install.
+
+1. Cline the repository:
+```bash
+git clone https://github.com/CarlyJovon/palindrome-backend.git
+```
+2. Navigate to the project directory:
+```
+cd palindrome-backend
+```
+3. Start the server
+```bash 
+node server.js
+```
+
+5. Open `http://localhost:3000`
