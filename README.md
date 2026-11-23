@@ -1,7 +1,14 @@
 # Palindrome Checker
 A web app that checks whether a word is a palindrome (spelled the same forwards and backwards). The check runs on a Node.js server built with only Node's core modules, no Express.
 
-Features
+## Preview
+<img width="1874" height="363" alt="Screenshot 2026-11-23 at 4 39 05 PM" src="https://github.com/user-attachments/assets/e43d7940-7f42-460b-ae41-4d83bc19f122" />
+
+## Live Demo
+[Try out the Palindrome Checker!](https://palindrome-backend-x6rz.onrender.com/)
+
+
+## Features
 - Enter a word and get an instant result
 - Case-insensitive check (Racecar counts as a palindrome)
 - Server returns JSON from a simple API endpoint
